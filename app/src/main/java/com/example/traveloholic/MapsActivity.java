@@ -451,7 +451,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 break;
 
             case R.id.sos:
-                String mail = "sauravjaiswal520@gmail.com";
+                String mail = "MAIL_ID";
                 String subject="Alert/Danger At ";
                 String message = " the coordinates "+latitude+", "+longitude;
 
