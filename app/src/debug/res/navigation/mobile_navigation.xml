@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.traveloholic.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_hotels"
+        android:name="com.example.traveloholic.ui.Hotels.hotels"
+        android:label="@string/menu_hotels"
+        tools:layout="@layout/global_fragment" />
+
+    <fragment
+        android:id="@+id/nav_hospitals"
+        android:name="com.example.traveloholic.ui.Hospitals.hospitals"
+        android:label="@string/menu_hospitals"
+        tools:layout="@layout/global_fragment" />
+
+    <fragment
+        android:id="@+id/nav_travel"
+        android:name="com.example.traveloholic.ui.Travel.travel"
+        android:label="@string/menu_travel"
+        tools:layout="@layout/fragment_travel" />
+
+    <fragment
+        android:id="@+id/nav_schools"
+        android:name="com.example.traveloholic.ui.Schools.schools"
+        android:label="@string/menu_schools"
+        tools:layout="@layout/global_fragment" />
+
+    <fragment
+        android:id="@+id/nav_restaurants"
+        android:name="com.example.traveloholic.ui.Restaurants.restaurants"
+        android:label="@string/menu_restaurants"
+        tools:layout="@layout/global_fragment" />
+
+    <fragment
+        android:id="@+id/nav_attractions"
+        android:name="com.example.traveloholic.ui.Attractions.attractions"
+        android:label="@string/menu_attractions"
+        tools:layout="@layout/global_fragment" />
+
+    <fragment
+        android:id="@+id/nav_temples"
+        android:name="com.example.traveloholic.ui.Temples.temples"
+        android:label="@string/menu_temples"
+        tools:layout="@layout/fragment_temple" />
+
+    <fragment
+        android:id="@+id/nav_parks"
+        android:name="com.example.traveloholic.ui.Parks.parks"
+        android:label="@string/menu_parks"
+        tools:layout="@layout/global_fragment" />
+
+    <fragment
+        android:id="@+id/nav_find"
+        android:name="com.example.traveloholic.ui.FindDistance.FindDistance"
+        android:label="@string/menu_find"
+        tools:layout="@layout/fragment_find_distance" />
+
+    <fragment
+        android:id="@+id/nav_normal"
+        android:name="com.example.traveloholic.ui.Normal.normal"
+        android:label="Normal View"
+        tools:layout="@layout/global_fragment" />
+
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.traveloholic.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.traveloholic.ui.AboutUs.AboutUs"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>

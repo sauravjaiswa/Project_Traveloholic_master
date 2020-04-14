@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_margin="6dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <EditText
+                android:id="@+id/TF_location"
+                android:layout_width="260dp"
+                android:layout_height="41dp"
+                android:inputType="textPersonName"
+                android:hint="Search Here"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="25dp" />
+
+            <ImageButton
+                android:id="@+id/B_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/TF_location"
+                android:onClick="onClick"
+                android:background="@color/white"
+                android:src="@drawable/ic_location_searching_black_24dp"
+                android:layout_toRightOf="@+id/TF_location" />
+
+            <ImageButton
+                android:id="@+id/type_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:background="@color/white"
+                android:onClick="onClick" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="190dp"
+        app:backgroundTint="#4d4574"
+        app:elevation="6dp"
+        android:onClick="onClick"
+        android:src="@drawable/weatherlogo" />
+
+    <include layout="@layout/content_navigation" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="120dp"
+        app:backgroundTint="#008000"
+        app:elevation="6dp"
+        android:autofillHints="@string/menu_guide"
+        android:onClick="onClick"
+        android:src="@drawable/ic_directions_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        app:backgroundTint="#ce2029"
+        app:elevation="6dp"
+        android:onClick="onClick"
+        android:src="@drawable/ic_add_alert" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
